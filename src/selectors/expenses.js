@@ -9,6 +9,7 @@ export default (expenses,{text,sortBy,startDate,endDate})=>{
         return startDateMatch && endDateMatch && textMatch;
     }).sort((a,b)=>{
         if(sortBy==='date'){
+            console.log('date');
             return a.createdAt < b.createdAt ? 1:-1;
         }
         if(sortBy==='amount'){
