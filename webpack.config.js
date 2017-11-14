@@ -9,8 +9,8 @@ module.exports = (env) => {
     const CSSExtract = new ExtractTextPlugin('styles.css');
 
     return {
-        //entry: './src/app.js',
-        entry: './src/playground/hoc.js',
+        entry: './src/app.js',
+        //entry: './src/playground/hoc.js',
         output: {
             path: path.join(__dirname, 'public'),
             filename: 'bundle.js'

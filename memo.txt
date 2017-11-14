@@ -33,7 +33,7 @@ ajouter une ligne dans babel.rc
 }
 
 
-
+yarn add react-redux@5.0.5
 
 
 
