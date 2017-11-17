@@ -61,7 +61,30 @@ yarn test -- --watch
 
 yarn add react-test-renderer@16.0.0
 
+yarn add enzyme@3.0.0 enzyme-adapter-react-16@1.0.0 raf@3.3.2
+-------------
+setupTests.js
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
+Enzyme.configure({
+    adapter:new Adapter()
+});
+-------------
+jest.config.json
+{
+    "setupFiles": [
+        "raf/polyfill",
+        "<rootDir>/src/tests/setupTests.js"
+    ]
+}
+-------------
+package.json
+    "test": "jest --config=jest.config.json"
+-------------
+
+
+yarn add enzyme-to-json@3.0.1
 
 
 
