@@ -142,6 +142,57 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 index.html
     <link rel="stylesheet" text="text/css" href="/styles.css">
 
+---------------------------------
+
+yarn add express@4.15.4
+
+
+server/server.js
+const path = require('path');
+const express = require('express');
+const app = express();
+const publicPath = path.join(__dirname, '..', 'public');
+const port = process.env.PORT || 3000;
+
+app.use(express.static(publicPath));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(publicPath, 'index.html'));
+});
+
+app.listen(port, () => {
+    console.log(`Server is up on port: ${port}`);
+});
+
+
+
+webpack.json
+    "start": "node server/server.js",
+
+
+yarn run build:prod
+yarn run start
+
+------------------------------
+
+www.heroku.com
+install heroku
+
+heroku --version
+heroku-cli/6.14.36-15f8a25 (windows-x64) node-v8.7.0
+
+heroku login
+Enter your Heroku credentials:
+Email: bruno.panaget@yahoo.fr
+Password: ************
+Logged in as bruno.panaget@yahoo.fr
+
+heroku create react-expensify-app
+or
+heroku create
+
+git remote
+git remote -v
 
 
 
