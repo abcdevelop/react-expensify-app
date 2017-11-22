@@ -3,6 +3,11 @@ import {Link} from 'react-router-dom';
 import moment from 'moment';
 import numeral from 'numeral';
 
+
+// set a locale
+//moment.locale('fr');
+//moment.locale(); //'fr'
+
 // load a locale
 numeral.register('locale', 'fr', {
     delimiters: {
@@ -34,7 +39,7 @@ const ExpenseListItem =({id,description,amount,createdAt})=>(
         <p>
             {numeral(amount / 100).format('0,0[.]00 $')}
             -
-            {moment(createdAt).format('D MMMM YYYY')}
+            {moment(createdAt).locale('fr').format('Do MMMM YYYY')}
         </p>
     </div>
 );
