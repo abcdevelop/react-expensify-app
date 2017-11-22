@@ -194,5 +194,35 @@ heroku create
 git remote
 git remote -v
 
+git status
+git add .
+git commit -m "blablabla"
+git push
+git push heroku master
+heroku open
+heroku logs
+
+yarn add chalk --dev
+reorganize dev dependencies
+
+delete node_module
+
+yarn install --production
+
+yarn install
+
+webpack.config.js
+            publicPath:'/dist/'
+
+yarn run dev-server
+
+yarn run build:prod
+
+yarn run start
+
+http://localhost:3000/
+
+.gitignore
+public/dist/
 
 
