@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install --production
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add numeral
 
 PATH: 
   C:\ProgramData\Oracle\Java\javapath;C:\app\admin_bpanaget\product\11.2.0\client_1;C:\app\admin_bpanaget\product\11.2.0\client_1\bin;C:\Program Files\Java\jdk1.7.0_71\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Informix\Connect\bin;C:\dev\soft\apache-maven-3.5.0\bin;C:\Program Files\ibm\gsk8\lib64;C:\Program Files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Yarn\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\nodejs\;C:\Program Files\Heroku\bin;C:\Users\bpanaget\AppData\Local\.meteor\;C:\Users\bpanaget\AppData\Local\atom\bin;C:\Users\bpanaget\AppData\Local\Yarn\bin;C:\Users\bpanaget\AppData\Roaming\npm;C:\Users\bpanaget\AppData\Local\Programs\Git\cmd
@@ -57,7 +57,7 @@ npm manifest:
       "style-loader": "0.18.2",
       "uuid": "3.1.0",
       "validator": "8.0.0",
-      "webpack": "3.1.0",
+      "webpack": "3.1.0"
     },
     "devDependencies": {
       "enzyme": "3.0.0",
@@ -6141,10 +6141,4 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  SyntaxError: C:\dev\projects\react-projects\react-expensify-app\package.json: Unexpected token } in JSON at position 1361
-      at JSON.parse (<anonymous>)
-      at C:\Program Files (x86)\Yarn\lib\yarn-cli.js:747:57
-      at Generator.next (<anonymous>)
-      at step (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:91:30)
-      at C:\Program Files (x86)\Yarn\lib\yarn-cli.js:102:13
-      at <anonymous>
+  Error: EPERM: operation not permitted, unlink 'C:\dev\projects\react-projects\react-expensify-app\node_modules\acorn-dynamic-import\node_modules\.bin'

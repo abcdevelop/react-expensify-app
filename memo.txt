@@ -225,4 +225,16 @@ http://localhost:3000/
 .gitignore
 public/dist/
 
+git commit -am "Setup devDependencies and dist folder"
+git push
+git push heroku master
+
+-------------------------------
+
+yarn run dev-server
+yarn test -- --watch
+
+yarn add numeral@2.0.6
+
+yarn run dev-server
 
