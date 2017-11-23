@@ -238,3 +238,10 @@ yarn add numeral@2.0.6
 
 yarn run dev-server
 
+---------------------------------
+
+yarn add firebase@4.2.0
+
+yarn run dev-server
+
+
