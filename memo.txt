@@ -274,3 +274,15 @@ heroku config:set FIREBASE_API_KEY=kldnqscd46305fqv03qsqqsc
  FIREBASE_AUTH_DOMAIN=expensify-36223.firebaseapp.com FIREBASE_DATABASE_URL=https://expensify-36223.firebaseio.com FIREBASE_P
 ROJECT_ID=expensify-36223 FIREBASE_STORAGE_BUCKET=expensify-36223.appspot.com FIREBASE_MESSAGING_SENDER_ID=12315645443
 
+git remote -v
+heroku  https://git.heroku.com/enigmatic-taiga-34949.git (fetch)
+heroku  https://git.heroku.com/enigmatic-taiga-34949.git (push)
+origin  https://github.com/abcdevelop/react-expensify-app.git (fetch)
+origin  https://github.com/abcdevelop/react-expensify-app.git (push)
+
+à voir si cela peut servir:
+git remote add heroku https://git.heroku.com/enigmatic-taiga-34949.git
+
+
+
+
