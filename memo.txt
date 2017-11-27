@@ -256,6 +256,14 @@ yarn add --dev dotenv@4.0.0
 
 ---------------------------------
 
+heroku remote -v
+git remote add heroku git@heroku.com:react-expensify-app.git
+heroku remote -v
+
+git push
+git push heroku master
+
+
 heroku config
 heroku config:set KEY=value
 heroku config
