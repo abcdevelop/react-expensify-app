@@ -1,6 +1,6 @@
 node_modules/
 .idea
 .log
-.env.development.js
-.env.test.js
+.env.development
+.env.test
 public/dist/

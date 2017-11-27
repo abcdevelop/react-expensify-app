@@ -254,3 +254,15 @@ yarn add --dev cross-env@5.0.5
 
 yarn add --dev dotenv@4.0.0
 
+---------------------------------
+
+heroku config
+heroku config:set KEY=value
+heroku config
+heroku config:unset KEY
+heroku config
+
+heroku config:set FIREBASE_API_KEY=kldnqscd46305fqv03qsqqsc
+ FIREBASE_AUTH_DOMAIN=expensify-36223.firebaseapp.com FIREBASE_DATABASE_URL=https://expensify-36223.firebaseio.com FIREBASE_P
+ROJECT_ID=expensify-36223 FIREBASE_STORAGE_BUCKET=expensify-36223.appspot.com FIREBASE_MESSAGING_SENDER_ID=12315645443
+

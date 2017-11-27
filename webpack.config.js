@@ -1,15 +1,15 @@
 // entry -> output
 
 const path = require('path');
-const webpack=require('webpack');
+const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-process.env.NODE_ENV=process.env.NODE_ENV || 'development';
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
-if(process.env.NODE_ENV==='test'){
-    require('dotenv').config({path:'env.test'});
-}else if(process.env.NODE_ENV==='development'){
-    require('dotenv').config({path:'env.development'});
+if (process.env.NODE_ENV === 'test') {
+    require('dotenv').config({path: '.env.test'});
+} else if (process.env.NODE_ENV === 'development') {
+    require('dotenv').config({path: '.env.development'});
 }
 
 module.exports = (env) => {
@@ -21,7 +21,7 @@ module.exports = (env) => {
         entry: './src/app.js',
         //entry: './src/playground/hoc.js',
         output: {
-            path: path.join(__dirname, 'public','dist'),
+            path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
         },
         module: {
@@ -64,7 +64,7 @@ module.exports = (env) => {
         devServer: {
             contentBase: path.join(__dirname, 'public'),
             historyApiFallback: true,
-            publicPath:'/dist/'
+            publicPath: '/dist/'
         }
     };
 };
