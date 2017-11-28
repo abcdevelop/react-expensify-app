@@ -283,6 +283,8 @@ origin  https://github.com/abcdevelop/react-expensify-app.git (push)
 à voir si cela peut servir:
 git remote add heroku https://git.heroku.com/enigmatic-taiga-34949.git
 
+------------------------------
 
+yarn add history@4.7.2
 
 
