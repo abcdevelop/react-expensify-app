@@ -288,3 +288,10 @@ git remote add heroku https://git.heroku.com/enigmatic-taiga-34949.git
 yarn add history@4.7.2
 
 
+------------------------------
+
+yarn add babel-polyfill@6.26.0
+
+dans webpack.config.js
+    return {
+        entry: ['babel-polyfill','./src/app.js'],
